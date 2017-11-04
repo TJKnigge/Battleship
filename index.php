@@ -19,33 +19,18 @@
             
             console.log (m);
             
+            document.getElementById("idbutton05").value = 1;
+            if("idbutton" === 1){
+                
             document.getElementById("idbutton"+m).style.background = "red";
+            
+        }else
+            document.getElementById("idbutton"+m).style.background = "blue";
+        
         }
         </script>
 
-<!-----
-    <script>
-            function Insert(elem)
-            {
-               console.log (m);
-            
-             elem.style.backgroundColor = "red";
-            
-            if(m == m){
-                 
-                document.getElementById("idbutton").style.background = "red";
-            
-            console.log ("idbutton");
-            }
-            
-            }
-            
-    
-    
-    
-    </script>
 
------>
     
 <body>
                 
@@ -53,7 +38,7 @@
         
      
         
-        <div>
+        
                 
 <?php
         $toetsen = array(array("","","","","","","","","",""),
@@ -75,15 +60,15 @@
             $id= $x."".$y;      
                        
                 echo '<button id=idbutton'.$id.' onclick="Insert(\''.$id.'\')">'.$toetsen[$x][$y].'</button>';
-                //echo '<button id=idbutton '.$id.' onclick=kleur(\''.$id.'\')>'.$toetsen[$x][$y].'</button>';//
-                //echo '<button id=idbutton '.$id.' onclick="Insert(\''.$id.'\')">'.$toetsen[$x][$y].'</button>';//
-                //echo '<button id=idbutton '.$id.' onclick=kleur(".$id.") type="button" class="button"> "$toetsen[$x][$y]"</button>';//
+                
             }
         }
         
         
 ?>
          
+        
+        
 </body>
     
 </html> 
@@ -93,16 +78,4 @@
 
 
 
-
-
-
-
-
-
 ?>
-        
-    
-    
-    
-    
-    
