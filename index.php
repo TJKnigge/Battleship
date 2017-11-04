@@ -15,11 +15,11 @@
 </head>
     
         <script>
-        function kleur (){
+        function Insert(m){
             
-            console.log ("idbutton");
+            console.log (m);
             
-            document.getElementById("idbutton").style.backgroundColor = "red";
+            document.getElementById("idbutton"+m).style.background = "red";
         }
         </script>
 
@@ -74,9 +74,10 @@
                 
             $id= $x."".$y;      
                        
-                
-                //echo '<button id=idbutton'.$id.' onclick="Insert(\''.$id.'\')">'.$toetsen[$x][$y].'</button>';//
-                echo '<button id=idbutton '.$id.' onclick="kleur()" "type="button" class="button"> "$toetsen[$x][$y]"</button>';
+                echo '<button id=idbutton'.$id.' onclick="Insert(\''.$id.'\')">'.$toetsen[$x][$y].'</button>';
+                //echo '<button id=idbutton '.$id.' onclick=kleur(\''.$id.'\')>'.$toetsen[$x][$y].'</button>';//
+                //echo '<button id=idbutton '.$id.' onclick="Insert(\''.$id.'\')">'.$toetsen[$x][$y].'</button>';//
+                //echo '<button id=idbutton '.$id.' onclick=kleur(".$id.") type="button" class="button"> "$toetsen[$x][$y]"</button>';//
             }
         }
         
